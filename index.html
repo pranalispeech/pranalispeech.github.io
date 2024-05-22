@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Learning Tree Speech</title>
+</head>
+
+<body>
+    <!-- Mobile Navigation Menu -->
+    <div class="topnav">
+        <a href="#home" class="active">LEARNING TREE SPEECH</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#therapyAnchor">Therapy Services</a>
+            <a href="#aboutMeAnchor">About Me</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="showHidenNavMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Desktop Navigation Menu -->
+    <div id="navbar">
+        <div id="navTitle"> LEARNING TREE SPEECH</div>
+        <a id="contactButton" href="#contact">Contact</a>
+        <a href="#aboutMeAnchor">About Me</a>
+        <a href="#therapyAnchor">Therapy Services</a>
+        <a id="homeButton" href="#home">Home</a>
+    </div>
+    <div id="home">
+        <div id="bg1" class="parallax">
+        </div>
+        <div id="mainCard" class="card">
+            <b>
+                <div id="homeMainTitleWhite" class="homeTitleWhite">LEARNING TREE SPEECH</div>
+            </b>
+            <div class="homeTitle2White" id="homeTitle2WhiteTop">Pranali Kalley M.S.CCC. SLP</div>
+            <div class="homeTitle2White">Speech Language Pathologist</div>
+            <div class="homeTitle2White" id="homeTitle2WhiteBottom">Serving families in San Mateo and greater San Francisco- Bay Area</div><br /><br />
+            <a href="#contact" class="ContactUsButton">BOOK A CONSULTATION</a>
+            <div class="homeTitle3White">&#8220;Turn your communication struggles into success stories with us!&#8221;
+            </div>
+        </div>
+    </div>
+    <a class="anchor" id="therapyAnchor"></a>
+    <div id="therapyservices">
+        <div id="servicesHeadingCard"><b>THERAPY SERVICES</b></div>
+        <div id="servicesContainer">
+            <div id="ssdisorders" class="servicesCard">
+                <div class="servicesTitleText">SPEECH SOUND<br /> DISORDERS</div>
+                <li class="therapyPoint" id="firstTherapyPoint">Articulation and Phonological disorders</li>
+                <li class="therapyPoint">Apraxia and motor speech disorders</li>
+                <span id="ssdisordersdots" class="servicesExtraText">...</span><span id="ssdisordersmore"
+                    class="servicesExtraText">Speech sound disorders involve difficulties in producing and articulating
+                    sounds in spoken language. Individuals with these disorders may struggle with pronouncing certain
+                    sounds, substituting one sound for another, or omitting sounds in words. Speech-language
+                    pathologists assess and provide targeted interventions to help individuals improve their
+                    articulation and phonological skills, promoting clearer and more effective
+                    communication.</span><br />
+                <button onclick="readMoreLess('ssdisorders')" id="ssdisordersreadMoreLessButton"
+                    class="readMoreLessButton">Read more</button>
+            </div>
+            <div id="ldisorders" class="servicesCard">
+                <div class="servicesTitleText">LANGUAGE<br /> DISORDERS</div>
+                <li class="therapyPoint" id="firstTherapyPoint">Receptive and Expressive Language Delays and Disorders
+                </li>
+                <li class="therapyPoint">Social / Pragmatic communication problems</li>
+                <li class="therapyPoint">School aged Language disorders</li>
+                <li class="therapyPoint">Central Auditory Processing disorder</li>
+                <span id="ldisordersdots" class="servicesExtraText">...</span><span id="ldisordersmore"
+                    class="servicesExtraText">Language delays refer to a situation where a child's acquisition of
+                    language milestones lags behind typical developmental expectations. Children with language delays
+                    may exhibit challenges in expressive language (spoken or written) or receptive language
+                    (understanding spoken or written language). These delays can impact vocabulary growth, sentence
+                    structure, and communication skills. Early identification and intervention, often involving
+                    speech-language pathologists, are crucial to support the child in catching up to age-appropriate
+                    language skills, promoting effective communication, and minimizing potential long-term impacts on
+                    academic and social development.</span><br />
+                <button onclick="readMoreLess('ldisorders')" id="ldisordersreadMoreLessButton"
+                    class="readMoreLessButton">Read more</button>
+            </div>
+
+            <div id="asdisorders" class="servicesCard">
+                <div class="servicesTitleText">AUTISM SPECTRUM <br /> DISORDERS</div>
+                <span id="asdisordersdots" class="servicesExtraText">...</span><span id="asdisordersmore"
+                    class="servicesExtraText">Autism Spectrum Disorders (ASDs) encompass a variety of developmental
+                    conditions characterized by challenges in social interaction (such as difficulties with social cues,
+                    maintaining eye contact, or participating in back-and-forth conversations), communication (evident
+                    through delayed speech development, trouble starting or continuing conversations, and issues with
+                    recognizing nonverbal signals), and behavior (including repetitive actions and heightened
+                    sensitivity to sensory inputs like light, sound, textures, and smells).</span><br />
+                <button onclick="readMoreLess('asdisorders')" id="asdisordersreadMoreLessButton"
+                    class="readMoreLessButton">Read more</button>
+            </div>
+            <div id="fsdifficulties" class="servicesCard">
+                <div class="servicesTitleText">FEEDING AND<br /> SWALLOWING<br /> DIFFICULTIES</div>
+                <span id="fsdifficultiesdots" class="servicesExtraText">...</span><span id="fsdifficultiesmore"
+                    class="servicesExtraText">SLPs conduct thorough evaluations to identify difficulties in oral-motor
+                    function, swallow coordination, and overall swallowing safety. Treatment plans are individualized,
+                    incorporating exercises and strategies to improve muscle strength, coordination, and ensure safe and
+                    effective swallowing. SLPs often collaborate with healthcare teams and provide valuable education to
+                    parents and caregivers for ongoing support.</span><br />
+                <button onclick="readMoreLess('fsdifficulties')" id="fsdifficultiesreadMoreLessButton"
+                    class="readMoreLessButton">Read more</button>
+            </div>
+            <div id="pcoaching" class="servicesCard">
+                <div class="servicesTitleText">PARENT<br /> COACHING</div>
+                <span id="pcoachingdots" class="servicesExtraText">...</span><span id="pcoachingmore"
+                    class="servicesExtraText">Parent coaching within the realm of speech therapy focuses on enabling
+                    parents to facilitate their child's communicative growth within the home setting. Speech-language
+                    pathologists (SLPs) engage in a partnership with parents, offering insights into successful
+                    communication tactics and personalized activities that cater to the child's specific requirements.
+                    This cooperative strategy ensures the creation of a nurturing home atmosphere that aligns with the
+                    goals of structured therapy sessions. By incorporating parent coaching, the reinforcement of
+                    communicative abilities is extended into diverse daily contexts, thereby augmenting the child's
+                    developmental strides.</span><br />
+                <button onclick="readMoreLess('pcoaching')" id="pcoachingreadMoreLessButton"
+                    class="readMoreLessButton">Read more</button>
+            </div>
+        </div>
+    </div>
+
+    <a class="anchor" id="aboutMeAnchor"></a>
+    <div id="aboutMeHeadingCard"><b>ABOUT ME</b></div>
+
+
+    <div id="aboutme">
+        <!-- <div id="personImage"></div> -->
+        <img id="personImg"></img>
+        <div id="aboutmeCard" class="card">
+            <div class="aboutMeTitleWhite" id="aboutMeTxt">MEET YOUR SPEECH THERAPIST</div>
+            <div class="aboutMeTitle2White">PRANALI KALLEY, M.S.CCC-SLP <br />Owner, Speech Language Pathologist</div>
+            <div class="aboutMeTitle4White"> Pranali is a speech-language pathologist who is passionate about helping
+                children and their families find creative solutions to overcome communication challenges. She brings
+                over 15 years of clinical experience in a variety of settings like hospitals, acute care rehab centers,
+                medical and educational settings like public and charter schools and early intervention private clinics
+                in California.
+                During her work in public and charter schools in California, Pranali endorsed neurodivergence affirming
+                practices in her treatments. Pranali has extensive experience working with children with various Speech
+                sound disorders, Language Delays, complex communication needs associated with Autism, Down Syndrome,
+                Dyslexia, Stuttering and Medical fragility. Pranali is passionate about discovering a child's strengths
+                and partnering with families and educators to find a holistic treatment approach which could involve
+                parent coaching and support. She understands the critical role that early intervention plays in
+                identifying and addressing speech and language challenges in young children and is an advocate for the
+                same.
+                <br /><br />After completing her Masters in Communication Sciences and Disorders on the east coast,
+                Pranali moved to California where she currently lives with her husband and son. She loves practicing
+                yoga, painting, ocean swimming and traveling with her family to explore new cultures and food!
+            </div>
+        </div>
+    </div>
+    <div class="advancedTrainingContainer">
+        <div class="myApproachCard">
+            <div class="approachTitle">My Approach</div>
+            <div class="approachTitle3">
+                <div class="approachTitle3Bold">We provide evidence based Speech and Language therapy in a fun and rewarding way along with parent
+                    coaching to meet your child's full potential and goals.</div>
+                <br /><br />Our approach is a Neurodiversity Affirming, Strength based treatment approach. <br />
+                Therapy includes play based language learned in a natural and relaxed environment.<br />
+                Sensory integration techniques are incorporated to help regulate the child's nervous system.
+
+            </div>
+        </div>
+        <div id="advancedTraining" class="advancedTrainingCard">
+            <div class="advancedTitleWhite" id="AdvancedTrainingTxt">Advanced Trainings & Certifications</div>
+            <div class="advancedTitle4White">
+                <ul>
+                <li class="advancedPoint">Certified Autism Spectrum Disorder Clinical Specialist Intensive Training
+                    (ASDCS)</li>
+                <li class="advancedPoint">Picture Exchange Communication System (PECS)</li>
+                <li class="advancedPoint">Parent coaching and Early Intervention support</li>
+                <li class="advancedPoint">Natural Language Acquisition through Meaningful Speech</li>
+                <li class="advancedPoint">Hanen: It Takes Two to Talk</li>
+                <li class="advancedPoint">Social Thinking Methodologies to treat pragmatic language and social
+                    difficulties</li>
+                <li class="advancedPoint">Neurodiversity Affirming IEP support</li>
+                <li class="advancedPointBold">California State Speech-Language Pathology License</li>
+                <li class="advancedPointBold">California Speech- Language Hearing Association member</li>
+                <li id="advancedPointLast" class="advancedPointBold">ASHA - American Speech and Hearing Association Clinical Competency Certification</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contactCard">
+        <div class="contactTitleWhite" id="contactTxt">Insurance And Billing</div>
+        <div class="contactTitle4White">
+            Learning tree speech is a private pay practice. We do not accept insurance at this time and are considered
+            out-of-network. We can provide superbills for reimbursement through your insurance. We recommend checking
+            your out-of-network benefits with your insurance company. We accept credit cards, checks, or cash pay.
+        </div>
+        <div class="contactTitleWhite" id="contactTxt">Contact</div>
+        <div class="contactTitle2White">
+            Contact us directly or fill out the form <a class="link"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfnQmbI8qMpEDASBqC_sUr4CEx1NniUzRe71WRyIW7_Ce3m6g/viewform?usp=sf_link"
+                target="_blank">here</a> and we will reach out to you.
+        </div>
+        <div class="contactTitle3White">Phone: 716-907-4493 <br />
+            812 Peary Ln, Foster City, CA 94404
+        </div>
+    </div>
+
+</body>
+
+</html>
