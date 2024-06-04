@@ -268,6 +268,10 @@ div.advancedTrainingContainer {
   margin-left: 1.2vw;
   margin-right: 1.2vw;
 }
+#AdvancedTrainingTxt {
+  text-align: left;
+  margin-left: 15%;
+}
 
 div.myApproachCard {
   box-shadow: 5px 0px 5px rgb(229, 229, 229);
