@@ -342,7 +342,7 @@ div.approachTitle3 {
   font-size: 1.15em;
   text-align: left;
   margin-left: 20%;
-  margin-right: 20%;
+  margin-right: 25%;
   margin-top: 5%;
   margin-bottom: 5%;
   color: black;
@@ -354,9 +354,9 @@ div.approachTitle3Bold {
 div.approachTitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 2.2em;
-  text-align: center;
+  text-align: left;
   padding-top: 4%;
-  margin-left: 5%;
+  margin-left: 17%;
   margin-right: 5%;
   padding-left: 3%;
   padding-right: 3%;
